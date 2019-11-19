@@ -1,11 +1,14 @@
 #!/bin/bash
 
 if [ "$1" != "" ]; then
-    time python3 networkPreprocessor.py -f $1;
+    echo "Parse network flows"
+    time python3 parser.py -f $1;
     sleep 3;
+    echo "Map IPs to Integers"
     time python3 mapper.py -f $1;
     sleep 3;
-    g++ cycleDFS.cc;
+    echo "Build Anonymized Graph"
+    g++ builder.cc;
     sleep 1;
     a='id_mapping_';
     b=$1;
