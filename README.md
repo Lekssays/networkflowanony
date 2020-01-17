@@ -16,7 +16,7 @@ SrcAddr,DstAddr,Proto,SrcBytes,DstBytes
 10.0.2.15,82.231.139.51,udp,114,0
 ```
 ## Deployment
-
+0. Install Redis
 1. Clone the project: `git clone https://github.com/Lekssays/networkflowanony.git`
 2. Install requirements: `pip3 install -r requirements.txt`
 3. Change permission: `chmod +x preprocess.sh`
