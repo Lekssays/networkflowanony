@@ -1,5 +1,5 @@
 # networkflowanony
-## A Framework for Anonymizing Network Flows using (k,l)-anonymization
+A Framework for Anonymizing Network Flows using (k,l)-anonymization
 
 ## Introduction
 - This project is in its alpha version. Further releases will have comments and detailed work flow.
